@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RereadProject</string>
+    <string name="titlePickedForYou">Picked for You</string>
+    <string name="titleBestSellers">Best Sellers</string>
+</resources>

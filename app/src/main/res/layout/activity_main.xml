@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- NỀN GIAO DIỆN - PHẦN HEADER CỐ ĐỊNH -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/green">
+
+        <!-- LOGO + THANH TÌM KIẾM + ICON -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_logo_white" />
+        <!-- mỗi cái ImageView sẽ có onClick nữa nhưng tính sau -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgGroup"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="5dp"
+                android:padding="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_group"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <SearchView
+                android:id="@+id/searchBar"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="120dp"
+                android:background="@drawable/ic_bar"
+                android:iconifiedByDefault="false"
+                android:searchIcon="@drawable/ic_search"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:queryBackground="@android:color/transparent"></SearchView>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgCart"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="310dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_cart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="360dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_profile"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <!-- BANNER LƯỚT NGANG -->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/bannerViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="12dp"
+                android:clipToPadding="false"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp" />
+
+            <!-- PICKED FOR YOU SECTION -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightgreen"
+                android:orientation="vertical"
+                android:paddingBottom="8dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgLargeBar1"
+                        android:layout_width="350dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="0"
+                        app:srcCompat="@drawable/ic_largebar" />
+
+                    <ImageView
+                        android:id="@+id/imgStar"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="17.5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="0"
+                        app:srcCompat="@drawable/ic_star" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginTop="19dp"
+                        android:fontFamily="@font/poppins_semibold_italic"
+                        android:text="@string/titlePickedForYou"
+                        android:textColor="@color/green"
+                        android:textSize="16sp" />
+                    <ImageView
+                        android:id="@+id/imgMorePickedForYou"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="355dp"
+                        android:layout_marginTop="22dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="0"
+                        app:srcCompat="@drawable/ic_more" />
+                </FrameLayout>
+                <!-- cái này là dùng cho cái phần hiển thị picked-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPickedList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:clipToPadding="false"
+                    android:scrollbars="none" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightgreen"
+                android:orientation="vertical"
+                android:paddingBottom="8dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgLargeBar2"
+                        android:layout_width="350dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="0"
+                        app:srcCompat="@drawable/ic_largebar" />
+
+                    <ImageView
+                        android:id="@+id/imgFlashSales"
+                        android:layout_width="110dp"
+                        android:layout_height="27dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="17.5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="0"
+                        app:srcCompat="@drawable/ic_flashsales" />
+
+                    <ImageView
+                        android:id="@+id/imgMoreFlashSales"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="355dp"
+                        android:layout_marginTop="22dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="0"
+                        app:srcCompat="@drawable/ic_more" />
+                </FrameLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvFlashSales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:clipToPadding="false"
+                    android:scrollbars="none" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightgreen"
+                android:orientation="vertical"
+                android:paddingBottom="8dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgLargeBar3"
+                        android:layout_width="350dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="0"
+                        app:srcCompat="@drawable/ic_largebar" />
+
+                    <ImageView
+                        android:id="@+id/imgBestSellers"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="17.5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="0"
+                        app:srcCompat="@drawable/ic_bestseller" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginTop="19dp"
+                        android:fontFamily="@font/poppins_semibold_italic"
+                        android:text="@string/titleBestSellers"
+                        android:textColor="@color/green"
+                        android:textSize="16sp" />
+                    <ImageView
+                        android:id="@+id/imgMoreBestSellers"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="355dp"
+                        android:layout_marginTop="22dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="0"
+                        app:srcCompat="@drawable/ic_more" />
+                </FrameLayout>
+                <!-- cái này là dùng cho cái phần hiển thị picked-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPBestSellers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:clipToPadding="false"
+                    android:scrollbars="none" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/btnChatbot"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="24dp"
+        android:padding="0dp"
+        android:src="@drawable/ic_chatbot"
+        android:elevation="8dp"
+        android:contentDescription="Chatbot"
+        android:clickable="true"
+        android:focusable="true" />
+</FrameLayout>
