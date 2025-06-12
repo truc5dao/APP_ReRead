@@ -1,0 +1,13 @@
+// ...existing code...
+.btn_solid_green {
+    background-color: #28a745 !important; /* màu xanh lá */
+    color: #fff !important;
+    border: none !important;
+}
+// ...existing code...
+.btn_outline_green {
+    background-color: transparent !important;
+    color: #28a745 !important;
+    border: 2px solid #28a745 !important;
+}
+// ...existing code...
