@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">RereadProject</string>
+    <string name="titlePickedForYou">Picked for You</string>
+    <string name="titleBestSellers">Best Sellers</string>
+    <string name="title_register_event_button">Register Now</string>
+    <string name="title_add_to_cart_button">Add to Cart</string>
+    <string name="title_chat_button">Chat</string>
+    <string name="title_review">Your Review</string>
+    <string name="title_rating">Your Rating</string>
+    <string name="title_term_of_use">Term of Use</string>
+    <string name="title_privacy_policy">Privacy Policy</string>
+    <string name="title_payment_policy">Payment Policy</string>
+    <string name="title_warranty_compensation_policy"><![CDATA[Warranty & Compensation Policy]]></string>
+    <string name="title_return_exchange_refund_policy"><![CDATA[Return, Exchange & Refund Policy\n]]></string>
+    <string name="title_faqs">FAQs</string>
+    <string name="title_guide_policy"><![CDATA[Guide & Policy\n]]></string>
+    <string name="title_load_more_button">Load More</string>
+    <string name="title_author_collection">Author Collection</string>
+    <string name="title_show_more_button">Show more ▼</string>
+</resources>
