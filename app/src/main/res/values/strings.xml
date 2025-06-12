@@ -2,4 +2,12 @@
     <string name="app_name">RereadProject</string>
     <string name="titlePickedForYou">Picked for You</string>
     <string name="titleBestSellers">Best Sellers</string>
+    <string name="btnAddToCart">Add to Cart</string>
+    <string name="btnBuyNow">Buy Now</string>
+    <string name="titleRatingsAndReviews">Ratings &amp; Reviews</string>
+    <string name="titleShowMore">Show more</string>
+    <string name="titleShowLess">Show less</string>
+    <string name="titleAboutUs">About Us</string>
+    <string name="titleSortPrice">Price</string>
+    <string name="titleGenre">Genre</string>
 </resources>

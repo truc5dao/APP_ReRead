@@ -1,0 +1,169 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- BEGIN original content -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/reviewItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <!-- Row: Avatar + Name + Stars -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imgAvatar"
+                    style="@style/Circular"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_avatar"
+                    app:layout_constraintBottom_toTopOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/Circular" />
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtCustomerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Erik Graff"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Stars -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imgStar"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_star"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+                <ImageView
+                    android:id="@+id/imgStar2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_star"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintEnd_toStartOf="@id/imgStar"
+                    app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+                <ImageView
+                    android:id="@+id/imgStar3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_star"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintEnd_toStartOf="@id/imgStar2"
+                    app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+                <ImageView
+                    android:id="@+id/imgStar4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_star"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintEnd_toStartOf="@id/imgStar3"
+                    app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+                <ImageView
+                    android:id="@+id/imgStar5"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_star"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintEnd_toStartOf="@id/imgStar4"
+                    app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!-- Review content -->
+        <TextView
+            android:id="@+id/reviewText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins"
+            android:paddingTop="8dp"
+            android:text="This book was assigned reading for the Social and Political Philosophy class at Loyola University Chicago. It's a rewarding, yet easy, read. John Locke's Second Treatise has long been mentioned as a major factor in forming the mindsets of the authors of the Constitution of the USA. There is certainly, as Wittgenstein would put it, a family resemblance, but a study of the library contents of the period indicates that actually it may not have been much read at the time. It certainly wasn't his most popular book. In any case, when the framers spoke and wrote, their references were much more often to the idealized days of the Roman Republic than to the theories of Locke or any other roughly contemporary political philosopher. Still, the kind of thinking enunciated by Locke was apparently in the air and his arguments regarding governmental legitimacy are powerful--at least to those of us indoctrinated since childhood with such ideals as that governments require legitimization beyond brute force or tradition. The basic idea is this: governments derive legitimacy from the consent of the governed--in other words, they are contractual arrangements. Any notion that this is historically descriptive is certainly dubious, but the idea is certainly relevant to the founding of this republic years after his death. It was also, during that period, apparently both realistic and practical, the existence of the American frontier allowing adults the possibility of opting out such contracts."
+            android:textSize="15dp" />
+
+        <!-- Toggle text -->
+        <LinearLayout
+            android:id="@+id/btnShowLess"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:paddingTop="8dp"
+                android:text="@string/titleShowLess"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:id="@+id/imgShowLessDiscription"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_showless"
+                app:layout_constraintEnd_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toTopOf="@+id/textView3" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </LinearLayout>
+</ScrollView>
