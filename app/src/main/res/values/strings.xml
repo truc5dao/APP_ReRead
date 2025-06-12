@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">ReRead</string>
+    <string name="title_billing_details">Billing details</string>
+    <string name="title_full_name">Full Name:</string>
+    <string name="title_phone_number">Phone Number:</string>
+    <string name="title_address">Address:</string>
+    <string name="title_delivery_mode">Delivery Mode:</string>
+    <string name="title_self_pick">Self-pick</string>
+    <string name="title_doordash">DoorDash</string>
+    <string name="title_payment_method">Payment Method</string>
+    <string name="title_cod">COD</string>
+    <string name="tile_internet_banking">Internet Banking</string>
+    <string name="title_product">Product</string>
+    <string name="title_subtotal">Subtotal</string>
+    <string name="title_delivery_fee">Delivery Fee</string>
+    <string name="title_voucher">Voucher</string>
+    <string name="title_total">Total</string>
+    <string name="title_btn_place_order">Place Order</string>
+    <string name="title_total_1">Total:</string>
+    <string name="title_saved">Saved:</string>
+    <string name="title_my_wishlist_name">My Wishlish Name</string>
+    <string name="title_select_all">Select All</string>
+    <string name="title_add_too_cart">Add too Cart</string>
+    <string name="title_change_password">Change Your Password</string>
+    <string name="title_old_password">Old Password</string>
+    <string name="title_new_password">New Password</string>
+    <string name="title_re_enter_password">Re-enter New Password</string>
+    <string name="title_register">Register</string>
+    <string name="title_btn_create_wishlist">Create a Wishlist</string>
+    <string name="title_wishlish_you_may_like">Wishlist you may like</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F2EDDA">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="#fff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="114dp"
+                android:layout_height="147dp"
+                app:srcCompat="@drawable/ProductPhoto_wishlist"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hey June Wishlist"
+                android:fontFamily="@font/poppins"
+                android:textSize="11dp"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

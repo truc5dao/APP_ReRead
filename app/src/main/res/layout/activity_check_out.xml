@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".k22411creread.CheckOutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#0A7B41">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <ImageView
+                    android:id="@+id/imageButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    app:srcCompat="@drawable/ic_back"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageButton4"
+                    android:layout_width="89dp"
+                    android:layout_height="17dp"
+                    app:srcCompat="@drawable/Logo"
+                    android:layout_margin="15dp"
+                    android:layout_gravity="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/title_billing_details"
+                    android:textSize="16sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"
+                    app:cardBackgroundColor="#F2EDDA"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/title_full_name"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/editTextText2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_edittext_background"
+                            android:ems="10"
+                            android:fontFamily="@font/poppins"
+                            android:hint="Bui Cong Nam"
+                            android:inputType="text"
+                            android:paddingStart="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:textColorHint="#391319"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/title_phone_number"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/editTextText3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_edittext_background"
+                            android:ems="10"
+                            android:fontFamily="@font/poppins"
+                            android:hint="0962112783"
+                            android:inputType="number"
+                            android:paddingStart="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:textColorHint="#391319"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/title_address"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/editTextText4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_edittext_background"
+                            android:ems="10"
+                            android:fontFamily="@font/poppins"
+                            android:hint="12 Tôn Đảng, Phương 13, Quận 4, TP. Hồ Chí Minh"
+                            android:inputType="text"
+                            android:paddingStart="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:textColorHint="#391319"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:paddingTop="5dp"
+                            android:text="@string/title_delivery_mode"
+                            android:textSize="13sp" />
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radioButton6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/radio_button_checked_color"
+                                android:checked="true"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/title_self_pick"
+                                android:textColor="#391319"
+                                android:textSize="13sp" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/radio_button_checked_color"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/title_doordash"
+                                android:textColor="#391319"
+                                android:textSize="13sp" />
+                        </RadioGroup>
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="@string/title_payment_method"
+                            android:textSize="13sp" />
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radioButton12"
+                                android:layout_width="141dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/radio_button_checked_color"
+                                android:checked="true"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/title_cod"
+                                android:textColor="#391319"
+                                android:textSize="13sp" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/radio_button_checked_color"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/tile_internet_banking"
+                                android:textColor="#391319"
+                                android:textSize="13sp" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"
+                    app:cardBackgroundColor="#F2EDDA"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="12dp"
+                        android:orientation="vertical">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:stretchColumns="*">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:text="@string/title_product"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/textView10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:text="@string/title_subtotal"
+                                    android:textAlignment="textEnd"
+                                    android:textSize="15sp" />
+
+
+
+                            </TableRow>
+
+                            <ListView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:text="@string/title_delivery_fee"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/textView31"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#F2EDDA"
+                                    android:ems="10"
+                                    android:fontFamily="@font/poppins"
+                                    android:inputType="text"
+                                    android:text="10,00$"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="#391319"
+                                    android:textSize="13sp" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:text="@string/title_voucher"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:id="@+id/textView32"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#F2EDDA"
+                                    android:ems="10"
+                                    android:fontFamily="@font/poppins"
+                                    android:inputType="text"
+                                    android:text="9hf28"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="#391319"
+                                    android:textSize="13sp"/>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:text="@string/title_total"
+                                    android:textSize="15dp" />
+
+
+                                <TextView
+                                    android:id="@+id/textView33"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#F2EDDA"
+                                    android:ems="10"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:inputType="text"
+                                    android:text="56,00$"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="#6F002F"
+                                    android:textSize="15sp"  />
+                            </TableRow>
+                        </TableLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:background="#F2EDDA"
+        android:orientation="horizontal"
+        android:paddingStart="50dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableLayout
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/title_total_1"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#F2EDDA"
+                    android:ems="5"
+                    android:fontFamily="@font/poppins_bold"
+                    android:inputType="text"
+                    android:text="56,00$"
+                    android:textColor="#6F002F"
+                    android:textSize="15sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/title_saved"
+                    android:textColor="#25C37A"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#F2EDDA"
+                    android:ems="5"
+                    android:fontFamily="@font/poppins_bold"
+                    android:inputType="text"
+                    android:text="56,00$"
+                    android:textColor="#25C37A"
+                    android:textSize="15sp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_btn_place_order"
+            app:cornerRadius="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#0A7B41"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
