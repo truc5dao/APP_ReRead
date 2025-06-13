@@ -23,7 +23,7 @@
                 android:id="@+id/imageView3"
                 android:layout_width="114dp"
                 android:layout_height="147dp"
-                app:srcCompat="@drawable/ProductPhoto_wishlist"
+                app:srcCompat="@drawable/product_photo_wishlist"
                 android:layout_marginTop="5dp"/>
 
             <TextView

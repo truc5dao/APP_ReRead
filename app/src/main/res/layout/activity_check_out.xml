@@ -30,7 +30,6 @@
                     android:id="@+id/imageButton5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@null"
                     app:srcCompat="@drawable/ic_back"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -40,13 +39,13 @@
                     android:id="@+id/imageButton4"
                     android:layout_width="89dp"
                     android:layout_height="17dp"
-                    app:srcCompat="@drawable/Logo"
-                    android:layout_margin="15dp"
                     android:layout_gravity="center"
-                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_margin="15dp"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_logo" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.appcompat.widget.Toolbar>
@@ -251,7 +250,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_margin="12dp"
                         android:orientation="vertical">
 
@@ -282,12 +281,11 @@
                                     android:textSize="15sp" />
 
 
-
                             </TableRow>
 
                             <ListView
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent" />
+                                android:layout_height="wrap_content" />
 
 
                             <TableRow
@@ -339,7 +337,7 @@
                                     android:text="9hf28"
                                     android:textAlignment="textEnd"
                                     android:textColor="#391319"
-                                    android:textSize="13sp"/>
+                                    android:textSize="13sp" />
                             </TableRow>
 
                             <TableRow
@@ -366,7 +364,7 @@
                                     android:text="56,00$"
                                     android:textAlignment="textEnd"
                                     android:textColor="#6F002F"
-                                    android:textSize="15sp"  />
+                                    android:textSize="15sp" />
                             </TableRow>
                         </TableLayout>
 
