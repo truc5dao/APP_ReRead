@@ -37,4 +37,12 @@
     <string name="title_dob">Date of Birth</string>
     <string name="title_order_history">Order History</string>
     <string name="title_interested_events">Interested Events</string>
+    <string name="title_top30_read">Top 30 Must Read In 2025</string>
+    <string name="title_quick_payment_via_qr_code">Quick Payment Via QR Code</string>
+    <string name="title_or">Or</string>
+    <string name="title_bank_name">Bank Name:</string>
+    <string name="title_account_name">Account Name:</string>
+    <string name="title_account_number">Account Number:</string>
+    <string name="title_amount">Amount:</string>
+    <string name="title_price">Price</string>
 </resources>
